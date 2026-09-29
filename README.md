@@ -1,5 +1,7 @@
 # Granular v0.2.1 – live granular synthesis for REAPER
 
+![image](screenshot.png)
+
 Pick audio items → get a cloud of grain items on voice tracks that **follows your sliders and automation**.
 Port and expansion of the original `core.py` generator. One action (`Granular.lua`) does everything.
 
