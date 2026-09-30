@@ -1,4 +1,5 @@
 -- @description Granular: live granular synthesis on REAPER items (one action: engine + window)
+-- @author _n_plugins
 -- @version 0.2.1
 -- @about
 --   Run this action to open the Granular window. The first run also starts the background engine
