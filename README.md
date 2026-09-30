@@ -1,4 +1,4 @@
-# Granular v0.2.1 – live granular synthesis for REAPER
+# Granular v0.2.1 – granular synthesis-driven REAPER project generator
 
 ![image](screenshot.png)
 
