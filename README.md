@@ -2,7 +2,7 @@
 
 ![image](screenshot.png)
 
-Pick audio items → get a cloud of grain items on voice tracks that **follows your sliders and automation**.
+Pick audio items → get a stream of grain items on voice tracks that **follows your sliders and automation**.
 Port and expansion of the original `core.py` generator. One action (`Granular.lua`) does everything.
 
 ## Quick start (macOS)
@@ -37,9 +37,9 @@ Uninstall: `./install_mac.sh --uninstall` removes exactly what it added (your pr
 | Header | Version, engine state, target track (follows the selected track, or **Pin** it), Auto update / Regenerate |
 | **Preview** (top) | Grains as time (x) vs. source position (y), one colour per voice, **white = Euclid B grains**, playhead |
 | Sources | Linked items with their track; **unlink**; **Add selected items** |
-| **Static copy** | Copies the current cloud as plain items in a new folder; the live cloud stays |
-| **Freeze** | Cloud becomes plain items; JSFX and links removed; muted original un-muted |
-| **Reset to preset** | Dropdown + button: *Defaults*, *Original core.py (start)*, *Texture cloud*, *Euclid rhythm*. Seed, Update, Source mute and Hand-edited-grains are kept; envelopes are not touched |
+| **Static copy** | Copies the current grains as plain items in a new folder; the live grains stay |
+| **Freeze** | Grains become plain items; JSFX and links removed; muted original un-muted |
+| **Reset to preset** | Dropdown + button: *Defaults*, *Original core.py (start)*, *Dense texture*, *Euclid rhythm*. Seed, Update, Source mute and Hand-edited-grains are kept; envelopes are not touched |
 | Three columns | **1 when & where:** Global, Timing, Grain, Source position · **2 sound:** Rate, Pitch, Amplitude, Pan · **3 pattern & shaping:** Probability, Euclid, B values, Loop, item envelopes |
 | **A** badge | The slider has an automation envelope. It is read-only in the window; edit the envelope in the lane |
 | Start with REAPER | Adds/removes a marked block in `Scripts/__startup.lua` |
@@ -129,6 +129,3 @@ src/     modules (edit these)        tools/run_tests.sh   build + all tests
 tools/   build.lua, tests, mock      dist/Granular.lua    generated bundle (never edit)
 ```
 `lua tools/build.lua` bundles `src/*.lua` into one `Granular.lua`, stamps `Core.VERSION` and regenerates the JSFX.
-
-## Roadmap
-0.3: presets on disk (save/load), per-parameter re-roll/lock, sources shared between granular tracks, `.rpp` writer if still wanted.
